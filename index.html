@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliver & Co Metal Works Ltd - Leading Dredging & Metal Manufacturing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-stone-50">
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-teal-900 to-teal-800 text-white sticky top-0 z-50 shadow-xl border-b-2 border-stone-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="w-14 h-14 bg-stone-200 rounded-full flex items-center justify-center border-2 border-teal-500">
+                        <img src="images/OLIVE.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold tracking-wide">OLIVER & CO</h1>
+                        <p class="text-xs text-teal-200 tracking-wider">METAL WORKS LTD</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 text-sm font-medium items-center">
+                    <a href="index.html" class="text-amber-300 transition-colors duration-300">Home</a>
+                    
+                    <!-- Services Dropdown -->
+                    <div class="relative group">
+                        <button class="hover:text-amber-300 transition-colors duration-300 flex items-center space-x-1">
+                            <span>Services</span>
+                            <svg class="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div class="py-2">
+                                <a href="dredger.html" class="block px-4 py-3 text-teal-900 hover:bg-teal-50 transition-colors duration-200">
+                                    <div class="font-semibold">Dredger Construction</div>
+                                    <div class="text-xs text-gray-500">Custom dredging machines</div>
+                                </a>
+                                <a href="maintainance.html" class="block px-4 py-3 text-teal-900 hover:bg-teal-50 transition-colors duration-200">
+                                    <div class="font-semibold">Maintenance & Repair</div>
+                                    <div class="text-xs text-gray-500">Equipment servicing</div>
+                                </a>
+                                <a href="Haulage.html" class="block px-4 py-3 text-teal-900 hover:bg-teal-50 transition-colors duration-200">
+                                    <div class="font-semibold">Haulage Services</div>
+                                    <div class="text-xs text-gray-500">Heavy equipment transport</div>
+                                </a>
+                                <a href="materials.html" class="block px-4 py-3 text-teal-900 hover:bg-teal-50 transition-colors duration-200">
+                                    <div class="font-semibold">Building Materials</div>
+                                    <div class="text-xs text-gray-500">Quality construction supplies</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Company Dropdown -->
+                    <div class="relative group">
+                        <button class="hover:text-amber-300 transition-colors duration-300 flex items-center space-x-1">
+                            <span>Company</span>
+                            <svg class="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div class="py-2">
+                                <a href="about.html" class="block px-4 py-3 text-teal-900 hover:bg-teal-50 transition-colors duration-200">
+                                    <div class="font-semibold">About Us</div>
+                                    <div class="text-xs text-gray-500">Our story & values</div>
+                                </a>
+                                <a href="teams.html" class="block px-4 py-3 text-teal-900 hover:bg-teal-50 transition-colors duration-200">
+                                    <div class="font-semibold">Our Team</div>
+                                    <div class="text-xs text-gray-500">Meet our leadership</div>
+                                </a>
+                                <a href="project.html" class="block px-4 py-3 text-teal-900 hover:bg-teal-50 transition-colors duration-200">
+                                    <div class="font-semibold">Projects</div>
+                                    <div class="text-xs text-gray-500">Our work portfolio</div>
+                                </a>
+                                <a href="career.html" class="block px-4 py-3 text-teal-900 hover:bg-teal-50 transition-colors duration-200">
+                                    <div class="font-semibold">Careers</div>
+                                    <div class="text-xs text-gray-500">Join our team</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="hover:text-amber-300 transition-colors duration-300">Contact</a>
+                    <a href="about.html" class="hover:text-amber-300 transition-colors duration-300">About Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="#home" class="block py-2 hover:text-amber-300 transition-colors">Home</a>
+                
+                <!-- Mobile Services Dropdown -->
+                <div>
+                    <button id="mobile-services-btn" class="w-full text-left py-2 hover:text-amber-300 transition-colors flex items-center justify-between">
+                        <span>Services</span>
+                        <svg class="w-4 h-4 transition-transform duration-300" id="mobile-services-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="mobile-services-dropdown" class="hidden pl-4 space-y-1">
+                        <a href="dredger.html" class="block py-2 text-sm text-teal-200 hover:text-amber-300">Dredger Construction</a>
+                        <a href="#" class="block py-2 text-sm text-teal-200 hover:text-amber-300">Maintenance & Repair</a>
+                        <a href="#" class="block py-2 text-sm text-teal-200 hover:text-amber-300">Haulage Services</a>
+                        <a href="#" class="block py-2 text-sm text-teal-200 hover:text-amber-300">Building Materials</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Company Dropdown -->
+                <div>
+                    <button id="mobile-company-btn" class="w-full text-left py-2 hover:text-amber-300 transition-colors flex items-center justify-between">
+                        <span>Company</span>
+                        <svg class="w-4 h-4 transition-transform duration-300" id="mobile-company-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="mobile-company-dropdown" class="hidden pl-4 space-y-1">
+                        <a href="#about" class="block py-2 text-sm text-teal-200 hover:text-amber-300">About Us</a>
+                        <a href="#" class="block py-2 text-sm text-teal-200 hover:text-amber-300">Our Team</a>
+                        <a href="#" class="block py-2 text-sm text-teal-200 hover:text-amber-300">Projects</a>
+                        <a href="#" class="block py-2 text-sm text-teal-200 hover:text-amber-300">Careers</a>
+                    </div>
+                </div>
+
+                <a href="#contact" class="block py-2 hover:text-amber-300 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-br from-teal-900 via-teal-800 to-teal-700 text-white py-24 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.4"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-fadeInUp">
+                    <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Leading Indigenous Brand in <span class="text-amber-300">Dredging</span> & <span class="text-amber-300">Metal Manufacturing</span>
+                    </h1>
+                    <p class="text-lg lg:text-xl text-teal-100 mb-8 leading-relaxed">
+                        Delivering exceptional quality, reliability, and customer satisfaction through innovative solutions and value-added services.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#services" class="bg-amber-500 hover:bg-amber-600 text-teal-900 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            Our Services
+                        </a>
+                        <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-teal-900 px-8 py-4 rounded-lg font-semibold transition-all duration-300">
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
+                
+               <!-- Carousel Container -->
+<div class="relative">
+    <div class="relative bg-stone-300 rounded-2xl shadow-2xl overflow-hidden aspect-square">
+        <!-- Carousel Slides -->
+        <div id="hero-carousel" class="relative h-full">
+            <!-- Slide 1 -->
+            <div class="carousel-slide absolute inset-0 flex items-center justify-center opacity-100 transition-opacity duration-700">
+                <img src="images/OLIVE.png" alt="">
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-700">
+                <img src="images/Image_fx (2).jpg" alt="">
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-700">
+              <img src="images/Image_fx (4).jpg" alt="">
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-slide absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-700">
+                <img src="images/Image_fx (1).jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Previous Button -->
+        <button id="prev-slide" class="absolute left-4 top-1/2 -translate-y-1/2 bg-teal-900 bg-opacity-50 hover:bg-opacity-75 text-white p-3 rounded-full transition-all duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+
+        <!-- Next Button -->
+        <button id="next-slide" class="absolute right-4 top-1/2 -translate-y-1/2 bg-teal-900 bg-opacity-50 hover:bg-opacity-75 text-white p-3 rounded-full transition-all duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+
+        <!-- Dots Indicator -->
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+            <button class="carousel-dot w-3 h-3 rounded-full bg-teal-900 opacity-100"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full bg-teal-900 opacity-30"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full bg-teal-900 opacity-30"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full bg-teal-900 opacity-30"></button>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-teal-900 mb-4">Our Services</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Comprehensive solutions for dredging, metal works, and construction needs</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-stone-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-stone-200">
+                    <div class="bg-stone-300 rounded-lg h-48 flex items-center justify-center mb-6">
+                        <div class="text-center">
+                            <div class="text-5xl mb-2">🚢</div>
+                            <p class="text-teal-700 font-medium text-sm">Image Placeholder</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-teal-900 mb-3">Dredger Construction</h3>
+                    <p class="text-gray-600 mb-4">Custom-designed dredging machines for marine and construction industries</p>
+                    <a href="#" class="text-teal-700 font-semibold hover:text-teal-900 inline-flex items-center">
+                        Learn More 
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-stone-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-stone-200">
+                    <div class="bg-stone-300 rounded-lg h-48 flex items-center justify-center mb-6">
+                        <div class="text-center">
+                            <div class="text-5xl mb-2">🔧</div>
+                            <p class="text-teal-700 font-medium text-sm">Image Placeholder</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-teal-900 mb-3">Maintenance & Repair</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive services to keep your equipment operational and efficient</p>
+                    <a href="#" class="text-teal-700 font-semibold hover:text-teal-900 inline-flex items-center">
+                        Learn More 
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-stone-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-stone-200">
+                    <div class="bg-stone-300 rounded-lg h-48 flex items-center justify-center mb-6">
+                        <div class="text-center">
+                            <div class="text-5xl mb-2">🚛</div>
+                            <p class="text-teal-700 font-medium text-sm">Image Placeholder</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-teal-900 mb-3">Haulage Services</h3>
+                    <p class="text-gray-600 mb-4">Reliable transport of heavy equipment and materials</p>
+                    <a href="#" class="text-teal-700 font-semibold hover:text-teal-900 inline-flex items-center">
+                        Learn More 
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-stone-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-stone-200">
+                    <div class="bg-stone-300 rounded-lg h-48 flex items-center justify-center mb-6">
+                        <div class="text-center">
+                            <div class="text-5xl mb-2">🏗️</div>
+                            <p class="text-teal-700 font-medium text-sm">Image Placeholder</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-teal-900 mb-3">Building Materials</h3>
+                    <p class="text-gray-600 mb-4">Quality construction materials and expert construction services</p>
+                    <a href="#" class="text-teal-700 font-semibold hover:text-teal-900 inline-flex items-center">
+                        Learn More 
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-teal-900 mb-6">About Oliver & Co</h2>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        At Oliver & Co Metal Works, we're committed to delivering exceptional quality, reliability, and customer satisfaction in all our endeavors. We strive to be a trusted partner for our clients, providing innovative solutions and value-added services that meet their evolving needs.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-teal-100 rounded-full p-2 mr-4">
+                                <svg class="w-6 h-6 text-teal-700" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-teal-900 mb-1">Our Mission</h3>
+                                <p class="text-gray-600">Delivering exceptional quality, reliability, and customer satisfaction</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-teal-100 rounded-full p-2 mr-4">
+                                <svg class="w-6 h-6 text-teal-700" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-teal-900 mb-1">Our Vision</h3>
+                                <p class="text-gray-600">Leading indigenous brand recognized for innovation, reliability, and sustainable impact</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-teal-100 rounded-full p-2 mr-4">
+                                <svg class="w-6 h-6 text-teal-700" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-teal-900 mb-1">Our Values</h3>
+                                <p class="text-gray-600">Integrity, Excellence, Innovation, Safety, and Sustainability</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="inline-block bg-teal-700 hover:bg-teal-800 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300">
+                        Work With Us
+                    </a>
+                </div>
+
+                <div class="bg-stone-300 rounded-2xl shadow-xl h-96 flex items-center justify-center">
+                    <img src="images/oliver.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-teal-900 to-teal-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-lg text-teal-100">Let's discuss how we can help with your project</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-teal-800 rounded-xl p-8 text-center hover:bg-teal-700 transition-colors duration-300">
+                    <div class="bg-teal-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Location</h3>
+                    <p class="text-teal-100">59B TOS Benson Road<br>Noah Junction, Ebute Ikorodu<br>Lagos, Nigeria</p>
+                </div>
+
+                <div class="bg-teal-800 rounded-xl p-8 text-center hover:bg-teal-700 transition-colors duration-300">
+                    <div class="bg-teal-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Phone</h3>
+                    <p class="text-teal-100">0706 845 9590<br>0815 217 8304</p>
+                </div>
+
+                <div class="bg-teal-800 rounded-xl p-8 text-center hover:bg-teal-700 transition-colors duration-300">
+                    <div class="bg-teal-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Email</h3>
+                    <p class="text-teal-100">Oliversimon25@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-teal-950 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 bg-stone-200 rounded-full flex items-center justify-center border-2 border-teal-500">
+                            <span class="text-teal-900 font-bold text-lg">O&C</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">OLIVER & CO</h3>
+                            <p class="text-xs text-teal-300">METAL WORKS LTD</p>
+                        </div>
+                    </div>
+                    <p class="text-teal-200 text-sm mb-4 leading-relaxed">
+                        Leading indigenous brand in dredging and metal manufacturing, recognized for innovation, reliability, and sustainable impact.
+                    </p>
+                    <!-- Social Media -->
+                    <div class="flex space-x-3">
+                        <a href="#" class="bg-teal-900 hover:bg-teal-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-teal-900 hover:bg-teal-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-teal-900 hover:bg-teal-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-teal-900 hover:bg-teal-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-amber-300">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="text-teal-200 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="#services" class="text-teal-200 hover:text-white transition-colors duration-300">Services</a></li>
+                        <li><a href="#about" class="text-teal-200 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="#contact" class="text-teal-200 hover:text-white transition-colors duration-300">Contact</a></li>
+                        <li><a href="#" class="text-teal-200 hover:text-white transition-colors duration-300">Our Projects</a></li>
+                        <li><a href="#" class="text-teal-200 hover:text-white transition-colors duration-300">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-amber-300">Our Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-teal-200 hover:text-white transition-colors duration-300">Dredger Construction</a></li>
+                        <li><a href="#" class="text-teal-200 hover:text-white transition-colors duration-300">Maintenance & Repair</a></li>
+                        <li><a href="#" class="text-teal-200 hover:text-white transition-colors duration-300">Haulage Services</a></li>
+                        <li><a href="#" class="text-teal-200 hover:text-white transition-colors duration-300">Building Materials</a></li>
+                        <li><a href="#" class="text-teal-200 hover:text-white transition-colors duration-300">Metal Fabrication</a></li>
+                        <li><a href="#" class="text-teal-200 hover:text-white transition-colors duration-300">Equipment Sales</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-amber-300">Contact Info</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 text-amber-300 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span class="text-teal-200">59B TOS Benson Road<br>Noah Junction, Ebute Ikorodu<br>Lagos, Nigeria</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span class="text-teal-200">0706 845 9590<br>0815 217 8304</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <a href="mailto:Oliversimon25@gmail.com" class="text-teal-200 hover:text-white transition-colors">Oliversimon25@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-teal-800 pt-8 mt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-teal-300 text-sm text-center md:text-left">
+                        &copy; 2025 Oliver & Co Metal Works Ltd. All rights reserved.
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-end gap-6 text-sm">
+                        <a href="#" class="text-teal-200 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                        <a href="#" class="text-teal-200 hover:text-white transition-colors duration-300">Terms of Service</a>
+                        <a href="#" class="text-teal-200 hover:text-white transition-colors duration-300">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Mobile Services Dropdown
+        const mobileServicesBtn = document.getElementById('mobile-services-btn');
+        const mobileServicesDropdown = document.getElementById('mobile-services-dropdown');
+        const mobileServicesIcon = document.getElementById('mobile-services-icon');
+        
+        mobileServicesBtn.addEventListener('click', () => {
+            mobileServicesDropdown.classList.toggle('hidden');
+            mobileServicesIcon.classList.toggle('rotate-180');
+        });
+
+        // Mobile Company Dropdown
+        const mobileCompanyBtn = document.getElementById('mobile-company-btn');
+        const mobileCompanyDropdown = document.getElementById('mobile-company-dropdown');
+        const mobileCompanyIcon = document.getElementById('mobile-company-icon');
+        
+        mobileCompanyBtn.addEventListener('click', () => {
+            mobileCompanyDropdown.classList.toggle('hidden');
+            mobileCompanyIcon.classList.toggle('rotate-180');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+    <script>
+// Carousel functionality
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+const dots = document.querySelectorAll('.carousel-dot');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.opacity = i === index ? '100' : '0';
+    });
+    dots.forEach((dot, i) => {
+        dot.style.opacity = i === index ? '100' : '30';
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+}
+
+// Button controls
+document.getElementById('next-slide').addEventListener('click', nextSlide);
+document.getElementById('prev-slide').addEventListener('click', prevSlide);
+
+// Dot controls
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        currentSlide = index;
+        showSlide(currentSlide);
+    });
+});
+
+// Auto-play carousel every 4 seconds
+setInterval(nextSlide, 4000);
+</script>
+</body>
+</html>

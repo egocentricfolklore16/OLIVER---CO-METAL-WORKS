@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance & Repair - Oliver & Co Metal Works Ltd</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50">
+       <!-- Navigation -->
+    <nav
+      class="bg-gradient-to-r from-teal-900 to-teal-800 text-white sticky top-0 z-50 shadow-xl border-b-2 border-stone-300"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex items-center space-x-3">
+            <div
+              class="w-14 h-14 bg-stone-200 rounded-full flex items-center justify-center border-2 border-teal-500"
+            >
+              <img src="images/OLIVE.png" alt="" />
+            </div>
+            <div>
+              <h1 class="text-xl font-bold tracking-wide">OLIVER & CO</h1>
+              <p class="text-xs text-teal-200 tracking-wider">
+                METAL WORKS LTD
+              </p>
+            </div>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div
+            class="hidden md:flex space-x-8 text-sm font-medium items-center"
+          >
+            <a
+              href="index.html"
+              class="text-amber-300 transition-colors duration-300"
+              >Home</a
+            >
+
+            <!-- Services Dropdown -->
+            <div class="relative group">
+              <button
+                class="hover:text-amber-300 transition-colors duration-300 flex items-center space-x-1"
+              >
+                <span>Services</span>
+                <svg
+                  class="w-4 h-4 group-hover:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
+              >
+                <div class="py-2">
+                  <a
+                    href="dredger.html"
+                    class="block px-4 py-3 text-teal-900 hover:bg-teal-50 transition-colors duration-200"
+                  >
+                    <div class="font-semibold">Dredger Construction</div>
+                    <div class="text-xs text-gray-500">
+                      Custom dredging machines
+                    </div>
+                  </a>
+                  <a
+                    href="maintainance.html"
+                    class="block px-4 py-3 text-teal-900 hover:bg-teal-50 transition-colors duration-200"
+                  >
+                    <div class="font-semibold">Maintenance & Repair</div>
+                    <div class="text-xs text-gray-500">Equipment servicing</div>
+                  </a>
+                  <a
+                    href="Haulage.html"
+                    class="block px-4 py-3 text-teal-900 hover:bg-teal-50 transition-colors duration-200"
+                  >
+                    <div class="font-semibold">Haulage Services</div>
+                    <div class="text-xs text-gray-500">
+                      Heavy equipment transport
+                    </div>
+                  </a>
+                  <a
+                    href="materials.html"
+                    class="block px-4 py-3 text-teal-900 hover:bg-teal-50 transition-colors duration-200"
+                  >
+                    <div class="font-semibold">Building Materials</div>
+                    <div class="text-xs text-gray-500">
+                      Quality construction supplies
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Company Dropdown -->
+            <div class="relative group">
+              <button
+                class="hover:text-amber-300 transition-colors duration-300 flex items-center space-x-1"
+              >
+                <span>Company</span>
+                <svg
+                  class="w-4 h-4 group-hover:rotate-180 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
+              >
+                <div class="py-2">
+                  <a
+                    href="about.html"
+                    class="block px-4 py-3 text-teal-900 hover:bg-teal-50 transition-colors duration-200"
+                  >
+                    <div class="font-semibold">About Us</div>
+                    <div class="text-xs text-gray-500">Our story & values</div>
+                  </a>
+                  <a
+                    href="teams.html"
+                    class="block px-4 py-3 text-teal-900 hover:bg-teal-50 transition-colors duration-200"
+                  >
+                    <div class="font-semibold">Our Team</div>
+                    <div class="text-xs text-gray-500">Meet our leadership</div>
+                  </a>
+                  <a
+                    href="project.html"
+                    class="block px-4 py-3 text-teal-900 hover:bg-teal-50 transition-colors duration-200"
+                  >
+                    <div class="font-semibold">Projects</div>
+                    <div class="text-xs text-gray-500">Our work portfolio</div>
+                  </a>
+                  <a
+                    href="career.html"
+                    class="block px-4 py-3 text-teal-900 hover:bg-teal-50 transition-colors duration-200"
+                  >
+                    <div class="font-semibold">Careers</div>
+                    <div class="text-xs text-gray-500">Join our team</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="contact.html"
+              class="hover:text-amber-300 transition-colors duration-300"
+              >Contact</a
+            >
+            <a
+              href="about.html"
+              class="hover:text-amber-300 transition-colors duration-300"
+              >About Us</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+          <a
+            href="index.html"
+            class="block py-2 hover:text-amber-300 transition-colors"
+            >Home</a
+          >
+
+          <!-- Mobile Services Dropdown -->
+          <div>
+            <button
+              id="mobile-services-btn"
+              class="w-full text-left py-2 hover:text-amber-300 transition-colors flex items-center justify-between"
+            >
+              <span>Services</span>
+              <svg
+                class="w-4 h-4 transition-transform duration-300"
+                id="mobile-services-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div id="mobile-services-dropdown" class="hidden pl-4 space-y-1">
+              <a
+                href="dredger.html"
+                class="block py-2 text-sm text-teal-200 hover:text-amber-300"
+                >Dredger Construction</a
+              >
+              <a
+                href="maintainance.html"
+                class="block py-2 text-sm text-teal-200 hover:text-amber-300"
+                >Maintenance & Repair</a
+              >
+              <a
+                href="Haulage.html"
+                class="block py-2 text-sm text-teal-200 hover:text-amber-300"
+                >Haulage Services</a
+              >
+              <a
+                href="materials.html"
+                class="block py-2 text-sm text-teal-200 hover:text-amber-300"
+                >Building Materials</a
+              >
+            </div>
+          </div>
+
+          <!-- Mobile Company Dropdown -->
+          <div>
+            <button
+              id="mobile-company-btn"
+              class="w-full text-left py-2 hover:text-amber-300 transition-colors flex items-center justify-between"
+            >
+              <span>Company</span>
+              <svg
+                class="w-4 h-4 transition-transform duration-300"
+                id="mobile-company-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div id="mobile-company-dropdown" class="hidden pl-4 space-y-1">
+              <a
+                href="about.html"
+                class="block py-2 text-sm text-teal-200 hover:text-amber-300"
+                >About Us</a
+              >
+              <a
+                href="teams.html"
+                class="block py-2 text-sm text-teal-200 hover:text-amber-300"
+                >Our Team</a
+              >
+              <a
+                href="project.html"
+                class="block py-2 text-sm text-teal-200 hover:text-amber-300"
+                >Projects</a
+              >
+              <a
+                href="career.html"
+                class="block py-2 text-sm text-teal-200 hover:text-amber-300"
+                >Careers</a
+              >
+            </div>
+          </div>
+
+          <a
+            href="contact.html"
+            class="block py-2 hover:text-amber-300 transition-colors"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section style="background-image: url(images/main.jpg);background-position: center;background-size: cover;" class="bg-gradient-to-br from-amber-600 via-amber-500 to-orange-600 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-block bg-teal-900 text-white px-4 py-2 rounded-full text-sm font-bold mb-6">PHASE 02</div>
+                <h1 class="text-5xl font-bold mb-6">Maintenance & Repair Services</h1>
+                <p class="text-xl text-amber-50 leading-relaxed">
+                    Comprehensive maintenance and repair solutions to keep your dredging machines and metal equipment operational, efficient, and performing at peak capacity.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Introduction -->
+            <div class="grid lg:grid-cols-2 gap-12 mb-20 items-center">
+                <div class="bg-stone-300 shadow-2xl h-96 flex items-center justify-center">
+                    <img class="rounded-2xl" src="images/mai.jpg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="text-4xl font-bold text-teal-900 mb-6">Minimize Downtime, Maximize Performance</h2>
+                    <p class="text-gray-700 mb-4 leading-relaxed text-lg">
+                        At Oliver & Co Metal Works, we understand the importance of keeping your dredging machines and metal equipment operational and efficient.
+                    </p>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Our team of experienced technicians and engineers provides comprehensive maintenance and repair services to minimize downtime and optimize performance. We offer preventive maintenance, emergency repairs, and complete overhauls.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Whether you need routine servicing or urgent breakdown repair, our prompt response and quality workmanship ensure your equipment stays productive.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Services Offered -->
+            <div class="mb-20">
+                <h2 class="text-4xl font-bold text-teal-900 mb-12 text-center">Services We Offer</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-t-4 border-teal-700">
+                        <div class="bg-teal-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-teal-900 mb-3">Preventive Maintenance</h3>
+                        <p class="text-gray-600 mb-4">
+                            Regular inspections and maintenance to prevent breakdowns and extend equipment lifespan. Scheduled service plans customized to your needs.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li>• Oil & filter changes</li>
+                            <li>• Component inspections</li>
+                            <li>• Performance testing</li>
+                            <li>• Lubrication services</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-t-4 border-amber-600">
+                        <div class="bg-amber-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-teal-900 mb-3">Breakdown Repair</h3>
+                        <p class="text-gray-600 mb-4">
+                            Emergency repair services to quickly restore equipment to operational status. Available 24/7 for urgent situations.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li>• 24/7 emergency response</li>
+                            <li>• Rapid diagnostics</li>
+                            <li>• Component replacement</li>
+                            <li>• System troubleshooting</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-t-4 border-teal-700">
+                        <div class="bg-teal-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-teal-900 mb-3">Overhaul & Refurbishment</h3>
+                        <p class="text-gray-600 mb-4">
+                            Comprehensive overhaul and refurbishment of dredging machines and equipment to restore like-new condition.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li>• Complete disassembly</li>
+                            <li>• Part replacement</li>
+                            <li>• System upgrades</li>
+                            <li>• Performance restoration</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-t-4 border-amber-600">
+                        <div class="bg-amber-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-teal-900 mb-3">Fabrication & Machining</h3>
+                        <p class="text-gray-600 mb-4">
+                            Custom fabrication and machining services for replacement parts and components when original parts are unavailable.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li>• Custom part fabrication</li>
+                            <li>• Precision machining</li>
+                            <li>• Welding services</li>
+                            <li>• Metal forming</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-t-4 border-teal-700">
+                        <div class="bg-teal-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-teal-900 mb-3">On-Site Services</h3>
+                        <p class="text-gray-600 mb-4">
+                            Our team can provide on-site maintenance and repair services to minimize downtime and eliminate transportation costs.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li>• Mobile repair units</li>
+                            <li>• Field diagnostics</li>
+                            <li>• Emergency response</li>
+                            <li>• Nationwide coverage</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border-t-4 border-amber-600">
+                        <div class="bg-amber-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-teal-900 mb-3">Documentation & Reports</h3>
+                        <p class="text-gray-600 mb-4">
+                            Detailed maintenance records, inspection reports, and recommendations for optimal equipment performance.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li>• Service history tracking</li>
+                            <li>• Inspection reports</li>
+                            <li>• Performance analysis</li>
+                            <li>• Maintenance schedules</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Equipment Covered -->
+            <div class="bg-gradient-to-br from-stone-100 to-teal-50 rounded-3xl p-12 mb-20">
+                <h2 class="text-4xl font-bold text-teal-900 mb-8 text-center">Equipment We Service</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                    Our maintenance and repair services cover a comprehensive range of dredging machines and metal equipment
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                        <div class="text-4xl mb-3">🚢</div>
+                        <h3 class="font-bold text-teal-900 mb-2">Dredgers</h3>
+                        <p class="text-sm text-gray-600">All types and sizes</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                        <div class="text-4xl mb-3">⚙️</div>
+                        <h3 class="font-bold text-teal-900 mb-2">Pumps</h3>
+                        <p class="text-sm text-gray-600">Hydraulic & centrifugal</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                        <div class="text-4xl mb-3">🔩</div>
+                        <h3 class="font-bold text-teal-900 mb-2">Engines</h3>
+                        <p class="text-sm text-gray-600">Diesel & marine engines</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                        <div class="text-4xl mb-3">⚡</div>
+                        <h3 class="font-bold text-teal-900 mb-2">Gearboxes</h3>
+                        <p class="text-sm text-gray-600">All transmission systems</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                        <div class="text-4xl mb-3">💧</div>
+                        <h3 class="font-bold text-teal-900 mb-2">Hydraulic Systems</h3>
+                        <p class="text-sm text-gray-600">Complete hydraulics</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                        <div class="text-4xl mb-3">🏗️</div>
+                        <h3 class="font-bold text-teal-900 mb-2">Metal Structures</h3>
+                        <p class="text-sm text-gray-600">Frames & components</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits -->
+            <div class="mb-20">
+                <h2 class="text-4xl font-bold text-teal-900 mb-12 text-center">Why Choose Our Services</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="bg-amber-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-10 h-10 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-teal-900 mb-2">Reduced Downtime</h3>
+                        <p class="text-sm text-gray-600">Prompt service keeps your projects on schedule</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="bg-teal-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-10 h-10 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-teal-900 mb-2">Optimized Performance</h3>
+                        <p class="text-sm text-gray-600">Peak efficiency and increased productivity</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="bg-amber-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-10 h-10 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-teal-900 mb-2">Extended Lifespan</h3>
+                        <p class="text-sm text-gray-600">Prolong equipment life and reduce replacement costs</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="bg-teal-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-10 h-10 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-teal-900 mb-2">Cost Savings</h3>
+                        <p class="text-sm text-gray-600">Prevent major problems and expensive repairs</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="bg-gradient-to-r from-amber-600 to-orange-600 rounded-3xl p-12 text-center text-white">
+                <h2 class="text-4xl font-bold mb-6">Need Emergency Repair or Scheduled Maintenance?</h2>
+                <p class="text-xl text-amber-50 mb-8 max-w-2xl mx-auto">
+                    Our experienced team is ready to help. Contact us 24/7 for emergency services or schedule your preventive maintenance today
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="contact.html" class="bg-white hover:bg-stone-100 text-amber-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                        Schedule Service
+                    </a>
+                    <a href="tel:+2347068459590" class="bg-teal-900 hover:bg-teal-800 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300">
+                        Emergency: 0706 845 9590
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-teal-950 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="text-center">
+                <p class="text-teal-300 text-sm">&copy; 2025 Oliver & Co Metal Works Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

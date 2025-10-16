@@ -31,9 +31,9 @@
           <div
             class="hidden md:flex space-x-8 text-sm font-medium items-center"
           >
-            <a
+                    <a
               href="index.html"
-              class="text-amber-300 transition-colors duration-300"
+              class="hover:text-amber-300 transition-colors duration-300"
               >Home</a
             >
 
@@ -162,7 +162,7 @@
             >
             <a
               href="about.html"
-              class="hover:text-amber-300 transition-colors duration-300"
+              class="text-amber-300 transition-colors duration-300"
               >About Us</a
             >
           </div>
@@ -969,20 +969,10 @@
       </div>
     </footer>
     <script>
-      // Mobile menu toggle
-      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-
-      if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener("click", () => {
-          alert("Mobile menu - add functionality");
-        });
-      }
-    </script>
-    <script>
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
@@ -991,7 +981,7 @@
         const mobileServicesBtn = document.getElementById('mobile-services-btn');
         const mobileServicesDropdown = document.getElementById('mobile-services-dropdown');
         const mobileServicesIcon = document.getElementById('mobile-services-icon');
-        
+
         mobileServicesBtn.addEventListener('click', () => {
             mobileServicesDropdown.classList.toggle('hidden');
             mobileServicesIcon.classList.toggle('rotate-180');
@@ -1001,7 +991,7 @@
         const mobileCompanyBtn = document.getElementById('mobile-company-btn');
         const mobileCompanyDropdown = document.getElementById('mobile-company-dropdown');
         const mobileCompanyIcon = document.getElementById('mobile-company-icon');
-        
+
         mobileCompanyBtn.addEventListener('click', () => {
             mobileCompanyDropdown.classList.toggle('hidden');
             mobileCompanyIcon.classList.toggle('rotate-180');

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oliver & Co Metal Works Ltd - Leading Dredging & Metal Manufacturing</title>
+    <link rel="stylesheet" href="globals.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @keyframes fadeInUp {
@@ -112,6 +113,8 @@
                 </button>
             </div>
 
+            <!-- decorative screenshot removed from nav (moved to page header) -->
+
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4">
                 <a href="#home" class="block py-2 hover:text-amber-300 transition-colors">Home</a>
@@ -154,12 +157,13 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="relative bg-gradient-to-br from-teal-900 via-teal-800 to-teal-700 text-white py-24 lg:py-32 overflow-hidden">
+    <section id="home" class="page-header relative bg-gradient-to-br from-teal-900 via-teal-800 to-teal-700 text-white py-14 lg:py-22 overflow-hidden">
         <div class="absolute inset-0 opacity-10">
             <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.4"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
         </div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+           
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="animate-fadeInUp">
                     <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -168,12 +172,22 @@
                     <p class="text-lg lg:text-xl text-teal-100 mb-8 leading-relaxed">
                         Delivering exceptional quality, reliability, and customer satisfaction through innovative solutions and value-added services.
                     </p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#services" class="bg-amber-500 hover:bg-amber-600 text-teal-900 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
-                            Our Services
+
+                    <div class="flex flex-wrap gap-8">
+                        
+                        <a href="#services" class="shadow-lg">
+                            <button class="btn-43">
+                                <span class="old">Our Services</span>
+                                <span class="new bg-amber-300"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg></span>
+                            </button>
                         </a>
-                        <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-teal-900 px-8 py-4 rounded-lg font-semibold transition-all duration-300">
-                            Get in Touch
+                        <a href="#contact">
+                            <button class="btn-30 scale-[1.2]">
+                                <span class="text-container">
+                                    <span class="text">Get in Touch</span>
+                                </span>
+                            </button>
+
                         </a>
                     </div>
                 </div>
@@ -242,16 +256,13 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Service 1 -->
-                <div class="bg-stone-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-stone-200">
+                <div class="bg-stone-50 rounded-xl p-3 pb-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-stone-200">
                     <div class="bg-stone-300 rounded-lg h-48 flex items-center justify-center mb-6">
-                        <div class="text-center">
-                            <div class="text-5xl mb-2">🚢</div>
-                            <p class="text-teal-700 font-medium text-sm">Image Placeholder</p>
-                        </div>
+                        <img class="h-[100%] w-[100%] rounded-lg" src="images/dredger.jpg" alt="">
                     </div>
                     <h3 class="text-xl font-bold text-teal-900 mb-3">Dredger Construction</h3>
-                    <p class="text-gray-600 mb-4">Custom-designed dredging machines for marine and construction industries</p>
-                    <a href="#" class="text-teal-700 font-semibold hover:text-teal-900 inline-flex items-center">
+                    <p class="text-gray-600 mb-4 text-[15px] text-justify">Custom-designed dredging machines for marine and construction industries</p>
+                    <a href="dredger.html" class="text-teal-700 font-semibold hover:text-teal-900 inline-flex items-center">
                         Learn More 
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -260,16 +271,13 @@
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-stone-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-stone-200">
+                <div class="bg-stone-50 rounded-xl p-3 pb-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-stone-200">
                     <div class="bg-stone-300 rounded-lg h-48 flex items-center justify-center mb-6">
-                        <div class="text-center">
-                            <div class="text-5xl mb-2">🔧</div>
-                            <p class="text-teal-700 font-medium text-sm">Image Placeholder</p>
-                        </div>
+                        <img class="h-[100%] w-[100%] rounded-lg w-full" src="images/mai.jpg" alt="">
                     </div>
                     <h3 class="text-xl font-bold text-teal-900 mb-3">Maintenance & Repair</h3>
-                    <p class="text-gray-600 mb-4">Comprehensive services to keep your equipment operational and efficient</p>
-                    <a href="#" class="text-teal-700 font-semibold hover:text-teal-900 inline-flex items-center">
+                    <p class="text-gray-600 mb-4 text-[15px] text-justify">Comprehensive services to keep your equipment operational and efficient</p>
+                    <a href="maintainance.html" class="text-teal-700 font-semibold hover:text-teal-900 inline-flex items-center">
                         Learn More 
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -278,16 +286,13 @@
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-stone-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-stone-200">
+                <div class="bg-stone-50 rounded-xl p-3 pb-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-stone-200">
                     <div class="bg-stone-300 rounded-lg h-48 flex items-center justify-center mb-6">
-                        <div class="text-center">
-                            <div class="text-5xl mb-2">🚛</div>
-                            <p class="text-teal-700 font-medium text-sm">Image Placeholder</p>
-                        </div>
+                        <img class="h-[100%] w-[100%] rounded-lg" src="images/haul2.jpg" alt="">
                     </div>
                     <h3 class="text-xl font-bold text-teal-900 mb-3">Haulage Services</h3>
-                    <p class="text-gray-600 mb-4">Reliable transport of heavy equipment and materials</p>
-                    <a href="#" class="text-teal-700 font-semibold hover:text-teal-900 inline-flex items-center">
+                    <p class="text-gray-600 mb-4 text-[15px] text-justify">Reliable transport of heavy equipment and materials</p>
+                    <a href="Haulage.html" class="text-teal-700 font-semibold hover:text-teal-900 inline-flex items-center">
                         Learn More 
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -296,16 +301,13 @@
                 </div>
 
                 <!-- Service 4 -->
-                <div class="bg-stone-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-stone-200">
+                <div class="bg-stone-50 rounded-xl p-3 pb-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-stone-200">
                     <div class="bg-stone-300 rounded-lg h-48 flex items-center justify-center mb-6">
-                        <div class="text-center">
-                            <div class="text-5xl mb-2">🏗️</div>
-                            <p class="text-teal-700 font-medium text-sm">Image Placeholder</p>
-                        </div>
+                        <img class="h-[100%] w-[100%] rounded-lg" src="images/cool.jpg" alt="">
                     </div>
                     <h3 class="text-xl font-bold text-teal-900 mb-3">Building Materials</h3>
-                    <p class="text-gray-600 mb-4">Quality construction materials and expert construction services</p>
-                    <a href="#" class="text-teal-700 font-semibold hover:text-teal-900 inline-flex items-center">
+                    <p class="text-gray-600 mb-4 text-[15px] text-justify">Quality construction materials and expert construction services</p>
+                    <a href="materials.html" class="text-teal-700 font-semibold hover:text-teal-900 inline-flex items-center">
                         Learn More 
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -365,13 +367,20 @@
                         </div>
                     </div>
 
-                    <a href="#contact" class="inline-block bg-teal-700 hover:bg-teal-800 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300">
-                        Work With Us
+                    <a href="#contact">
+                        <button class="btn-38 bg-teal-700">
+                            <span class="new">Contact Us</span>
+                            <div class="old">
+                                <span>Work With Us</span>
+                                <span aria-hidden>Work With Us</span>
+                            </div>
+                        </button>
+
                     </a>
                 </div>
 
-                <div class="bg-stone-300 rounded-2xl shadow-xl h-96 flex items-center justify-center">
-                    <img src="images/oliver.jpg" alt="">
+                <div class="bg-stone-300 rounded-2xl shadow-2xl h-96 flex items-center justify-center">
+                    <img class="h-[100%] rounded-lg" src="images/oliver.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -387,7 +396,7 @@
 
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-teal-800 rounded-xl p-8 text-center hover:bg-teal-700 transition-colors duration-300">
-                    <div class="bg-teal-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div class="icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
@@ -398,7 +407,7 @@
                 </div>
 
                 <div class="bg-teal-800 rounded-xl p-8 text-center hover:bg-teal-700 transition-colors duration-300">
-                    <div class="bg-teal-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div class="icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                         </svg>
@@ -408,7 +417,7 @@
                 </div>
 
                 <div class="bg-teal-800 rounded-xl p-8 text-center hover:bg-teal-700 transition-colors duration-300">
-                    <div class="bg-teal-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div class="icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                         </svg>

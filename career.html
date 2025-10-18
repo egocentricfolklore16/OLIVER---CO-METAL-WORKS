@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Careers - Oliver & Co Metal Works Ltd</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-stone-50">
     <!-- Navigation -->
@@ -296,7 +298,11 @@
 
     <!-- Page Header -->
     <section
-    style="background-image: url(images/TEAM.jpg);background-position: center;background-size: cover;"
+      style="
+        background-image: url(images/TEAM.jpg);
+        background-position: center;
+        background-size: cover;
+      "
       class="bg-gradient-to-br from-teal-900 via-teal-800 to-teal-700 text-white py-20"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -625,7 +631,7 @@
           <div
             class="bg-stone-300 rounded-2xl shadow-2xl h-96 flex items-center justify-center"
           >
-            <img src="images/OLIVE.png" alt="">
+            <img src="images/OLIVE.png" alt="" />
           </div>
         </div>
       </div>
@@ -1206,90 +1212,105 @@
       </div>
     </footer>
     <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
 
-        // Mobile Services Dropdown
-        const mobileServicesBtn = document.getElementById('mobile-services-btn');
-        const mobileServicesDropdown = document.getElementById('mobile-services-dropdown');
-        const mobileServicesIcon = document.getElementById('mobile-services-icon');
-        
-        mobileServicesBtn.addEventListener('click', () => {
-            mobileServicesDropdown.classList.toggle('hidden');
-            mobileServicesIcon.classList.toggle('rotate-180');
-        });
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
 
-        // Mobile Company Dropdown
-        const mobileCompanyBtn = document.getElementById('mobile-company-btn');
-        const mobileCompanyDropdown = document.getElementById('mobile-company-dropdown');
-        const mobileCompanyIcon = document.getElementById('mobile-company-icon');
-        
-        mobileCompanyBtn.addEventListener('click', () => {
-            mobileCompanyDropdown.classList.toggle('hidden');
-            mobileCompanyIcon.classList.toggle('rotate-180');
-        });
+      // Mobile Services Dropdown
+      const mobileServicesBtn = document.getElementById("mobile-services-btn");
+      const mobileServicesDropdown = document.getElementById(
+        "mobile-services-dropdown"
+      );
+      const mobileServicesIcon = document.getElementById(
+        "mobile-services-icon"
+      );
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu if open
-                    mobileMenu.classList.add('hidden');
-                }
+      mobileServicesBtn.addEventListener("click", () => {
+        mobileServicesDropdown.classList.toggle("hidden");
+        mobileServicesIcon.classList.toggle("rotate-180");
+      });
+
+      // Mobile Company Dropdown
+      const mobileCompanyBtn = document.getElementById("mobile-company-btn");
+      const mobileCompanyDropdown = document.getElementById(
+        "mobile-company-dropdown"
+      );
+      const mobileCompanyIcon = document.getElementById("mobile-company-icon");
+
+      mobileCompanyBtn.addEventListener("click", () => {
+        mobileCompanyDropdown.classList.toggle("hidden");
+        mobileCompanyIcon.classList.toggle("rotate-180");
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
             });
+            // Close mobile menu if open
+            mobileMenu.classList.add("hidden");
+          }
         });
+      });
     </script>
     <script>
-// Carousel functionality
-let currentSlide = 0;
-const slides = document.querySelectorAll('.carousel-slide');
-const dots = document.querySelectorAll('.carousel-dot');
-const totalSlides = slides.length;
+      // Carousel functionality
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".carousel-slide");
+      const dots = document.querySelectorAll(".carousel-dot");
+      const totalSlides = slides.length;
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.style.opacity = i === index ? '100' : '0';
-    });
-    dots.forEach((dot, i) => {
-        dot.style.opacity = i === index ? '100' : '30';
-    });
-}
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.style.opacity = i === index ? "100" : "0";
+        });
+        dots.forEach((dot, i) => {
+          dot.style.opacity = i === index ? "100" : "30";
+        });
+      }
 
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    showSlide(currentSlide);
-}
-
-function prevSlide() {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    showSlide(currentSlide);
-}
-
-// Button controls
-document.getElementById('next-slide').addEventListener('click', nextSlide);
-document.getElementById('prev-slide').addEventListener('click', prevSlide);
-
-// Dot controls
-dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-        currentSlide = index;
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
         showSlide(currentSlide);
-    });
-});
+      }
 
-// Auto-play carousel every 4 seconds
-setInterval(nextSlide, 4000);
-</script>
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(currentSlide);
+      }
+
+      // Button controls
+      document
+        .getElementById("next-slide")
+        .addEventListener("click", nextSlide);
+      document
+        .getElementById("prev-slide")
+        .addEventListener("click", prevSlide);
+
+      // Dot controls
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          currentSlide = index;
+          showSlide(currentSlide);
+        });
+      });
+
+      // Auto-play carousel every 4 seconds
+      setInterval(nextSlide, 4000);
+    </script>
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
